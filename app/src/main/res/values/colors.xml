@@ -1,0 +1,18 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bottom_nav_icon_color">#FF000000</color>
+    <color name="bottom_nav_icon_color_selected">#405DE6</color>
+    <color name="nav_bar_color">#FFFFFF</color>
+    <color name="sky_blue">#00BBFF</color>
+    <color name="orange">#1AEF02</color>
+    <color name="green">#1AEF02</color>
+    <color name="red">#D91609</color>
+    <color name="dark_gray">#353333</color>
+    <color name="light_gray">#4B4A4A</color>
+    <color name="gray">#332F2F</color>
+
+
+    <!-- Add a color state list for bottom navigation -->
+
+</resources>

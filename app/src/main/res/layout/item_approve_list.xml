@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <!-- News Image -->
+    <ImageView
+        android:id="@+id/newsImages"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_image" /> <!-- Placeholder image -->
+
+    <!-- Title and Timestamp in the same row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- News Title -->
+        <TextView
+            android:id="@+id/newsTitles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="News Title"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Approval Status -->
+        <TextView
+            android:id="@+id/approvalStatuss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:textColor="#FF9800"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- News Description -->
+    <TextView
+        android:id="@+id/newsDescriptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="News Description"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:ellipsize="end" />
+
+    <!-- News Reporter and Timestamp in the same row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <!-- News Reporter -->
+        <TextView
+            android:id="@+id/newsReporters"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reporter: Unknown"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <!-- Timestamp -->
+        <TextView
+            android:id="@+id/newsTimestamps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 mins ago"
+            android:textColor="#999999"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <!-- Feedback -->
+    <TextView
+        android:id="@+id/newsFeedbacks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Feedback: -"
+        android:textColor="#8F8F8F"
+        android:textSize="14sp" />
+
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/newsRatings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="★ ★ ★ ★ ☆"
+        android:textColor="#FFD700"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
